@@ -1,0 +1,308 @@
+body { 
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #002BE7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com 90% de opacidade */
+    color: #fff;
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Alinha o header no topo da página */
+    left: 0; /* Alinha o header à esquerda */
+    width: 100%; /* Ocupa 100% da largura da tela */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+}
+
+.logo img {
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2px;
+}
+
+nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li .btn-entrar {
+    background-color: transparent;
+}
+
+nav ul li .btn-assinar {
+    background-color: #002BE7;
+}
+
+nav ul li .btn-entrar:hover {
+    background-color: #262935;
+}
+
+nav ul li .btn-assinar:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* CSS - Section01 */
+.hero {
+    padding-top: 70px; /* Ajuste conforme a altura do header */
+    background-image: url(img/bgmax.png);
+    background-size: cover;
+    background-position:center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 20px 150px;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 85%,
+        50% 100%,
+        0 85%
+    );
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Herda a imagem de fundo da seção .hero */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Coloca atrás do conteúdo */
+    animation: zoomBackground 20s infinite alternate ease-in-out; /* Animação de zoom */
+}
+
+@keyframes zoomBackground {
+    0% {
+        transform: scale(1); /* Tamanho original */
+    }
+    100% {
+        transform: scale(1.2); /* Zoom de 20% */
+    }
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9) 20%, /* Parte mais escura perto do botão */
+        rgba(0, 0, 0, 0.6) 50%, /* Meio escuro */
+        rgba(0, 0, 0, 0.3) 80%, /* Clareando */
+        rgba(0, 0, 0, 0) 100%   /* Totalmente transparente no topo */
+    );
+    pointer-events: none; /* Para não interferir com interações */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-logo {
+    height: 120px;
+    margin-bottom: 0.1px;
+}
+.hero h1{
+    font-size: 2.5em;
+    margin-bottom: 1px;
+}
+
+.hero p{
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+
+.btn-hero{
+    background-color: #002BE7;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: trasnform 0.2s ease;
+}
+
+.btn-hero:hover{
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* CSS - Secao Planos*/
+#planos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#planos h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.planos-opcoes {
+    margin-bottom: 40px;
+}
+
+.planos-opcoes p {
+    font-size: 0.9em;
+    color: #5db3ec;
+    margin-bottom: 10px;
+}
+
+.planos-opcoes {
+    margin-bottom: 40px;
+    position: relative;
+}
+.economize-container {
+    position: absolute;
+    top: -40px; /* Ajuste para posicionar acima do botão */
+    left: calc(50% + 60px); /* Move o texto 60px para a direita */
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.economize {
+    font-size: 1.2em;
+    color: #0071eb;
+    margin-bottom: 10px;
+    white-space: now;
+
+}
+
+.switch-container {
+    display: inline-flex;
+    background-color: #0071eb;
+    border-radius: 50px;
+    padding: 5px;
+    border: none;
+}
+
+.switch-label {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.switch-label.mensal {
+    background-color: transparent;
+    color: #fff;
+}
+
+.switch-label.mensal:hover {
+    background-color: #005bb5;
+}
+
+.switch-label.anual-parcelado {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px; /* Limita a largura máxima do contêiner dos cards */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Faz com que os cards se expandam igualmente */
+    min-height: 400px; /* Define uma altura mínima para todos os cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo uniformemente */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #000; /* Texto preto */
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Faz com que a lista ocupe o espaço disponível */
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: #000; /* Texto preto */
+}
+
+.card .preco {
+    font-size: 1.5em;
+    color: #000; /* Texto preto */
+    margin-bottom: 10px;
+}
+
+.card .preco-total {
+    font-size: 1em;
+    color: #666; /* Cinza escuro para o preço total */
+    margin-bottom: 20px;
+}
+
+.card .btn-plano {
+    background-color: #0071eb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+
+.card .btn-plano:hover {
+    transform: scale(1.05); /* Aumenta o botão em 5% */
+}
