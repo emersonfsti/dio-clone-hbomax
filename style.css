@@ -1,4 +1,4 @@
-body { 
+body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 1rem;
@@ -14,14 +14,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto com 90% de opacidade */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Fundo preto com 90% de opacidade */
     color: #fff;
-    position: fixed; /* Fixa o header no topo */
-    top: 0; /* Alinha o header no topo da página */
-    left: 0; /* Alinha o header à esquerda */
-    width: 100%; /* Ocupa 100% da largura da tela */
-    z-index: 1000; /* Garante que o header fique acima de outros elementos */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+    position: fixed;
+    /* Fixa o header no topo */
+    top: 0;
+    /* Alinha o header no topo da página */
+    left: 0;
+    /* Alinha o header à esquerda */
+    width: 100%;
+    /* Ocupa 100% da largura da tela */
+    z-index: 1000;
+    /* Garante que o header fique acima de outros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para dar profundidade */
 }
 
 .logo img {
@@ -68,22 +75,21 @@ nav ul li .btn-assinar:hover {
 
 /* CSS - Section01 */
 .hero {
-    padding-top: 70px; /* Ajuste conforme a altura do header */
+    padding-top: 70px;
+    /* Ajuste conforme a altura do header */
     background-image: url(img/bgmax.png);
     background-size: cover;
-    background-position:center;
+    background-position: center;
     color: #fff;
     text-align: center;
     padding: 200px 20px 150px;
     position: relative;
     overflow: hidden;
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 85%,
-        50% 100%,
-        0 85%
-    );
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 85%,
+            50% 100%,
+            0 85%);
 }
 
 .hero::before {
@@ -93,19 +99,25 @@ nav ul li .btn-assinar:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: inherit; /* Herda a imagem de fundo da seção .hero */
+    background-image: inherit;
+    /* Herda a imagem de fundo da seção .hero */
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Coloca atrás do conteúdo */
-    animation: zoomBackground 20s infinite alternate ease-in-out; /* Animação de zoom */
+    z-index: -1;
+    /* Coloca atrás do conteúdo */
+    animation: zoomBackground 20s infinite alternate ease-in-out;
+    /* Animação de zoom */
 }
 
 @keyframes zoomBackground {
     0% {
-        transform: scale(1); /* Tamanho original */
+        transform: scale(1);
+        /* Tamanho original */
     }
+
     100% {
-        transform: scale(1.2); /* Zoom de 20% */
+        transform: scale(1.2);
+        /* Zoom de 20% */
     }
 }
 
@@ -116,14 +128,18 @@ nav ul li .btn-assinar:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.9) 20%, /* Parte mais escura perto do botão */
-        rgba(0, 0, 0, 0.6) 50%, /* Meio escuro */
-        rgba(0, 0, 0, 0.3) 80%, /* Clareando */
-        rgba(0, 0, 0, 0) 100%   /* Totalmente transparente no topo */
-    );
-    pointer-events: none; /* Para não interferir com interações */
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 20%,
+            /* Parte mais escura perto do botão */
+            rgba(0, 0, 0, 0.6) 50%,
+            /* Meio escuro */
+            rgba(0, 0, 0, 0.3) 80%,
+            /* Clareando */
+            rgba(0, 0, 0, 0) 100%
+            /* Totalmente transparente no topo */
+        );
+    pointer-events: none;
+    /* Para não interferir com interações */
 }
 
 .hero-content {
@@ -137,17 +153,18 @@ nav ul li .btn-assinar:hover {
     height: 120px;
     margin-bottom: 0.1px;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 2.5em;
     margin-bottom: 1px;
 }
 
-.hero p{
+.hero p {
     font-size: 1.9em;
     margin-bottom: 20px;
 }
 
-.btn-hero{
+.btn-hero {
     background-color: #002BE7;
     color: #fff;
     border: none;
@@ -158,7 +175,7 @@ nav ul li .btn-assinar:hover {
     transition: trasnform 0.2s ease;
 }
 
-.btn-hero:hover{
+.btn-hero:hover {
     background-color: #005bb5;
     transform: scale(1.05);
 }
@@ -189,10 +206,13 @@ nav ul li .btn-assinar:hover {
     margin-bottom: 40px;
     position: relative;
 }
+
 .economize-container {
     position: absolute;
-    top: -40px; /* Ajuste para posicionar acima do botão */
-    left: calc(50% + 60px); /* Move o texto 60px para a direita */
+    top: -40px;
+    /* Ajuste para posicionar acima do botão */
+    left: calc(50% + 60px);
+    /* Move o texto 60px para a direita */
     transform: translateX(-50%);
     text-align: center;
 }
@@ -242,9 +262,12 @@ nav ul li .btn-assinar:hover {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 1000px; /* Limita a largura máxima do contêiner dos cards */
-    margin: 0 auto; /* Centraliza o contêiner na tela */
+    max-width: 1000px;
+    /* Limita a largura máxima do contêiner dos cards */
+    margin: 0 auto;
+    /* Centraliza o contêiner na tela */
 }
+
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -253,40 +276,48 @@ nav ul li .btn-assinar:hover {
     width: 300px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Faz com que os cards se expandam igualmente */
-    min-height: 400px; /* Define uma altura mínima para todos os cards */
+    flex: 1;
+    /* Faz com que os cards se expandam igualmente */
+    min-height: 400px;
+    /* Define uma altura mínima para todos os cards */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribui o conteúdo uniformemente */
+    justify-content: space-between;
+    /* Distribui o conteúdo uniformemente */
 }
 
 .card h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
-    color: #000; /* Texto preto */
+    color: #000;
+    /* Texto preto */
 }
 
 .card ul {
     list-style: none;
     padding: 0;
     margin-bottom: 20px;
-    flex-grow: 1; /* Faz com que a lista ocupe o espaço disponível */
+    flex-grow: 1;
+    /* Faz com que a lista ocupe o espaço disponível */
 }
 
 .card ul li {
     margin-bottom: 10px;
-    color: #000; /* Texto preto */
+    color: #000;
+    /* Texto preto */
 }
 
 .card .preco {
     font-size: 1.5em;
-    color: #000; /* Texto preto */
+    color: #000;
+    /* Texto preto */
     margin-bottom: 10px;
 }
 
 .card .preco-total {
     font-size: 1em;
-    color: #666; /* Cinza escuro para o preço total */
+    color: #666;
+    /* Cinza escuro para o preço total */
     margin-bottom: 20px;
 }
 
@@ -299,10 +330,56 @@ nav ul li .btn-assinar:hover {
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
-    transition: transform 0.3s ease; /* Transição suave para o efeito de hover */
+    transition: transform 0.3s ease;
+    /* Transição suave para o efeito de hover */
 }
 
 
 .card .btn-plano:hover {
-    transform: scale(1.05); /* Aumenta o botão em 5% */
+    transform: scale(1.05);
+    /* Aumenta o botão em 5% */
 }
+
+/* Section Estreias */
+.estreias {
+    background-color: #07071C;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.estreias h1 {
+    font-size: 2.5em;
+    margin-top: 40px;
+}
+
+.grid-estreias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-auto-rows: 300px; /* Altura fixa para cada linha */
+    gap: 20px; /* Espaçamento entre as imagens */
+    max-width: 1200px; /* Largura máxima do grid */
+    margin: 0 auto; /* Centraliza o grid */
+    padding-bottom: 40px; /* Espaço abaixo do grid */
+}
+
+.imagem-estreia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.imagem-estreia img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    transition: transition 0.3s ease;
+}
+
+.imagem-estreia img:hover{
+    transform: scale(1.05);
+}
+
