@@ -1,3 +1,8 @@
+/* Habilita a rolagem suave em toda a página */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -180,6 +185,29 @@ nav ul li .btn-assinar:hover {
     transform: scale(1.05);
 }
 
+/* Responsividade para telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px; /* Reduz o padding para telas menores */
+    }
+
+    .hero-logo {
+        height: 60px; /* Reduz ainda mais o tamanho do logo */
+    }
+
+    .hero h1 {
+        font-size: 1.5em; /* Título menor para telas menores */
+    }
+
+    .hero p {
+        font-size: 1em; /* Parágrafo menor para telas menores */
+    }
+
+    .btn-hero {
+        padding: 10px 20px; /* Botão menor para telas menores */
+        font-size: 0.9em;
+    }
+}
 /* CSS - Secao Planos*/
 #planos {
     padding: 50px 20px;
@@ -477,12 +505,17 @@ nav ul li .btn-assinar:hover {
 /* Animação de zoom */
 @keyframes zoomIn {
     0% {
-        transform: scale(0.9); /* Começa com 90% do tamanho */
-        opacity: 0; /* Começa transparente */
+        transform: scale(0.9);
+        /* Começa com 90% do tamanho */
+        opacity: 0;
+        /* Começa transparente */
     }
+
     100% {
-        transform: scale(1); /* Termina com 100% do tamanho */
-        opacity: 1; /* Termina totalmente visível */
+        transform: scale(1);
+        /* Termina com 100% do tamanho */
+        opacity: 1;
+        /* Termina totalmente visível */
     }
 }
 
@@ -490,12 +523,144 @@ nav ul li .btn-assinar:hover {
 .grid-imagens img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
-    border-radius: 10px; /* Bordas arredondadas */
-    animation: zoomIn 0.5s ease-in-out; /* Animação de 0.5 segundos */
+    object-fit: cover;
+    /* Garante que a imagem cubra o contêiner sem distorcer */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    animation: zoomIn 0.5s ease-in-out;
+    /* Animação de 0.5 segundos */
 }
 
 .grid-imagens img:hover {
     transform: scale(1.05);
     /* Aumenta a imagem em 5% no hover */
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #001833;
+    /* Azul mais escuro para o rodapé */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #0071eb;
+    /* Linha superior para destacar */
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.direitos-autorais {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espaçamento entre os ícones */
+    margin-bottom: 10px;
+}
+
+.redes-sociais img {
+    width: 32px;
+    /* Tamanho dos ícones */
+    height: 32px;
+    transition: transform 0.3s ease;
+    /* Efeito de hover suave */
+    object-fit: contain;
+    /* Garante que os ícones mantenham a proporção */
+}
+
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+    /* Aumenta o ícone em 10% no hover */
+}
+
+.creditos {
+    font-size: 0.8em;
+    color: #ccc;
+    /* Cor mais clara para os créditos */
+    margin-top: 10px;
+}
+
+.creditos a {
+    color: #0071eb;
+    /* Cor dos links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.creditos a:hover {
+    color: #005bb5;
+    /* Cor ao passar o mouse */
+}
+
+
+/* Estilos gerais para telas grandes */
+/* (Mantém os estilos que já temos) */
+
+/* Responsividade para telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Ajustes para os cards */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        /* Uma coluna (um embaixo do outro) */
+        gap: 20px;
+        /* Espaçamento entre os cards */
+    }
+
+    .card {
+        width: 90%;
+        /* Ocupa 100% da largura */
+        max-width: 90%;
+        /* Garante que não ultrapasse a largura do contêiner */
+    }
+
+    /* Ajustes para o grid de imagens da seção Estreias */
+    .grid-estreias {
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas */
+        grid-auto-rows: auto;
+        /* Altura automática */
+        gap: 10px;
+        /* Espaçamento entre as imagens */
+    }
+
+    /* Ajustes para o grid de imagens (Estreia e Descubra) */
+    .grid-imagens {
+        grid-template-columns: repeat(2, 1fr);
+        /* Duas colunas */
+        grid-auto-rows: auto;
+        /* Altura automática */
+    }
+
+    /* Ajustes para o carrossel de opções */
+    .carrossel-opcoes {
+        flex-direction: column;
+        /* Coloca as setas em cima e embaixo */
+        gap: 10px;
+    }
+
+    .opcoes-container {
+        width: 100%;
+        /* Ocupa toda a largura */
+    }
+
+    .opcoes {
+        justify-content: center;
+        /* Centraliza as opções */
+    }
+
+    /* Ajustes para o rodapé */
+    .redes-sociais {
+        flex-wrap: wrap;
+        /* Quebra os ícones em várias linhas se necessário */
+    }
 }
