@@ -355,31 +355,147 @@ nav ul li .btn-assinar:hover {
 
 .grid-estreias {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    grid-auto-rows: 300px; /* Altura fixa para cada linha */
-    gap: 20px; /* Espaçamento entre as imagens */
-    max-width: 1200px; /* Largura máxima do grid */
-    margin: 0 auto; /* Centraliza o grid */
-    padding-bottom: 40px; /* Espaço abaixo do grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    grid-auto-rows: 300px;
+    /* Altura fixa para cada linha */
+    gap: 20px;
+    /* Espaçamento entre as imagens */
+    max-width: 1200px;
+    /* Largura máxima do grid */
+    margin: 0 auto;
+    /* Centraliza o grid */
+    padding-bottom: 40px;
+    /* Espaço abaixo do grid */
 }
 
 .imagem-estreia {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
-    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o contêiner */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
 
-.imagem-estreia img{
+.imagem-estreia img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    object-fit: cover;
+    /* Garante que a imagem cubra o contêiner sem distorcer */
     transition: transition 0.3s ease;
 }
 
-.imagem-estreia img:hover{
+.imagem-estreia img:hover {
     transform: scale(1.05);
 }
 
+/* Section Descubra o Melhor De */
+.descubra {
+    background-color: #07071C;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.descubra h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Carrossel de Opções */
+.carrossel-opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    /* Limita a largura do carrossel */
+    margin: 0 auto;
+    /* Centraliza o carrossel */
+}
+
+.opcoes-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.opcoes {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.opcao {
+    font-size: 3.2em;
+    color: #999;
+    /* Cor cinza para os itens das pontas */
+    padding: 25px;
+    cursor: pointer;
+    white-space: nowrap;
+    /* Impede que o texto quebre em várias linhas */
+    transition: color 0.3s ease;
+}
+
+.opcao.ativo {
+    color: #fff;
+    /* Cor branca para o item do meio */
+}
+
+/* Setas do Carrossel */
+.seta {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.seta:hover {
+    color: #0071eb;
+}
+
+/* Grid de Imagens */
+.grid-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+    max-width: 1200px;
+    /* Largura máxima do grid */
+    margin: 0 auto;
+    /* Centraliza o grid */
+    padding-bottom: 40px;
+    /* Espaço abaixo do grid */
+}
+
+/* Animação de zoom */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.9); /* Começa com 90% do tamanho */
+        opacity: 0; /* Começa transparente */
+    }
+    100% {
+        transform: scale(1); /* Termina com 100% do tamanho */
+        opacity: 1; /* Termina totalmente visível */
+    }
+}
+
+/* Aplica a animação às imagens */
+.grid-imagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas */
+    animation: zoomIn 0.5s ease-in-out; /* Animação de 0.5 segundos */
+}
+
+.grid-imagens img:hover {
+    transform: scale(1.05);
+    /* Aumenta a imagem em 5% no hover */
+}
