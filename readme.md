@@ -1,4 +1,6 @@
-# Clone do Site HBO Max
+# Clone do Site HBO Max que agora em 2025 é:
+
+![MAX Logo](https://raw.githubusercontent.com/emersonfsti/dio-clone-hbomax/fbfc327dc448c256283f0fe3968cb6a2ed263193/img/max-h-w-l.svg) 
 
 Este projeto é um clone do site da **HBO Max**, desenvolvido como parte do desafio prático da [Digital Innovation One (DIO)](https://www.dio.me/). O objetivo foi replicar a interface do site utilizando **HTML** e **CSS**, com animações e responsividade para diferentes dispositivos.
 
@@ -41,7 +43,14 @@ O projeto está organizado da seguinte forma:
 - **Git e GitHub**: Versionamento e hospedagem do código.
 
 ---
+## 🌟 **Imagem das duas paginas criadas**
 
+- **index.html**: 
+<br>
+![index-html](https://github.com/emersonfsti/dio-clone-hbomax/blob/main/img/index.jpg?raw=true) 
+- **login.html**: 
+<br>
+![login-html](https://github.com/emersonfsti/dio-clone-hbomax/blob/main/img/login.jpg?raw=true) 
 ## 🌟 **Como Executar o Projeto**
 
 1. Clone este repositório:
