@@ -52,6 +52,10 @@ O projeto está organizado da seguinte forma:
 **login.html**: 
 <br>
 ![login-html](https://github.com/emersonfsti/dio-clone-hbomax/blob/main/img/login.jpg?raw=true) 
+
+link do site:
+https://emersonfsti.github.io/dio-clone-hbomax/index.html
+
 ## 🌟 **Como Executar o Projeto**
 
 1. Clone este repositório:
