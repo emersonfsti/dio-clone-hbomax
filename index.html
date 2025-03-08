@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAX Clone</title>
@@ -9,19 +10,22 @@
 </head>
 
 <body>
-    <!-- Header-->
+    <!-- Cabeçalho da página -->
     <header>
         <div class="logo">
             <img src="img/max-h-w-l.svg" alt="MAX logo">
         </div>
         <nav>
             <ul>
-                <li><button onclick="window.location.href='#'" class="btn-entrar">ENTRAR</button></li>
+                <!-- Botão para entrar -->
+                <li><button onclick="window.location.href='login.html'" class="btn-entrar">ENTRAR</button></li>
+                <!-- Botão para assinar -->
                 <li><button onclick="window.location.href='#planos'" class="btn-assinar">ASSINAR AGORA</button></li>
             </ul>
         </nav>
     </header>
-    <!-- Section Hero -->
+
+    <!-- Seção Hero com chamada principal -->
     <section class="hero">
         <div class="hero-content">
             <img class="hero-logo" src="img/max-h-w-l.svg" alt="MAX logo">
@@ -30,7 +34,8 @@
             <button class="btn-hero" onclick="window.location.href='#planos'">ASSINE AGORA</button>
         </div>
     </section>
-    <!-- Section Planos -->
+
+    <!-- Seção de Planos -->
     <section id="planos" class="planos">
         <h1>ESCOLHA O MELHOR PLANO PARA VOCÊ</h1>
         <div class="planos-opcoes">
@@ -39,7 +44,9 @@
             </div>
             <div class="botoes-opcoes">
                 <div class="switch-container">
+                    <!-- Opção de plano mensal -->
                     <label for="mensal" class="switch-label mensal">MENSAL</label>
+                    <!-- Opção de plano anual parcelado -->
                     <label for="anual-parcelado" class="switch-label anual-parcelado">ANUAL PARCELADO</label>
                 </div>
             </div>
@@ -83,10 +90,12 @@
             </div>
         </div>
     </section>
-    <!-- Section Estreias -->
+
+    <!-- Seção de Estreias -->
     <section id="estreias" class="estreias">
         <h1>Estreias que vão dar o que falar</h1>
         <div class="grid-estreias">
+            <!-- Imagens das estreias -->
             <div class="imagem-estreia">
                 <img src="img/estreia1.png" alt="Estreia 1">
             </div>
@@ -109,11 +118,10 @@
         <button class="btn-hero" onclick="window.location.href='#planos'">ASSINE AGORA</button>
     </section>
 
-    <!-- Section Descubra o Melhor De -->
+    <!-- Seção Descubra o Melhor De -->
     <section id="descubra" class="descubra">
         <h1>DESCUBRA O MELHOR DE</h1>
-
-        <!-- Carrossel de Opções -->
+        <!-- Carrossel de opções -->
         <div class="carrossel-opcoes">
             <button class="seta seta-esquerda">&larr;</button>
             <div class="opcoes-container">
@@ -123,49 +131,48 @@
             </div>
             <button class="seta seta-direita">&rarr;</button>
         </div>
-
-        <!-- Grid de Imagens -->
+        <!-- Grid de imagens -->
         <div class="grid-imagens">
             <!-- As imagens serão carregadas dinamicamente via JavaScript -->
         </div>
         <button class="btn-hero" onclick="window.location.href='#planos'">ASSINE AGORA</button>
     </section>
 
-<!-- Rodapé -->
-<footer class="rodape">
-    <div class="rodape-conteudo">
-        <!-- Texto de direitos autorais -->
-        <p class="direitos-autorais">
-            ©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.
-        </p>
-
-        <!-- Logos das redes sociais da HBO Max -->
-        <div class="redes-sociais">
-            <a href="https://www.facebook.com/HBOMaxLatam" target="_blank">
-                <img src="img/facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com/hbomaxlatam/" target="_blank">
-                <img src="img/instagram-icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.tiktok.com/@hbomaxlatam" target="_blank">
-                <img src="img/tiktok-icon.png" alt="TikTok">
-            </a>
-            <a href="https://www.youtube.com/c/HBOMaxLatam" target="_blank">
-                <img src="img/youtube-icon.png" alt="YouTube">
-            </a>
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <!-- Texto de direitos autorais -->
+            <p class="direitos-autorais">
+                ©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.
+            </p>
+            <!-- Links para redes sociais -->
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/HBOMaxLatam" target="_blank">
+                    <img src="img/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/hbomaxlatam/" target="_blank">
+                    <img src="img/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@hbomaxlatam" target="_blank">
+                    <img src="img/tiktok-icon.png" alt="TikTok">
+                </a>
+                <a href="https://www.youtube.com/c/HBOMaxLatam" target="_blank">
+                    <img src="img/youtube-icon.png" alt="YouTube">
+                </a>
+            </div>
+            <!-- Créditos e contatos -->
+            <p class="creditos">
+                Coverpage by Emerson Felix de Souza<br>
+                Contato:
+                <a href="https://github.com/emersonfsti" target="_blank">GitHub</a> -
+                <a href="mailto:emersonfsti@gmail.com">G-mail</a> -
+                <a href="https://www.linkedin.com/in/emersonfsti/" target="_blank">LinkedIn</a>
+            </p>
         </div>
+    </footer>
 
-        <!-- Créditos e contatos -->
-        <p class="creditos">
-            Coverpage by Emerson Felix de Souza<br>
-            Contato: 
-            <a href="https://github.com/emersonfsti" target="_blank">GitHub</a> - 
-            <a href="mailto:emersonfsti@gmail.com">G-mail</a> - 
-            <a href="https://www.linkedin.com/in/emersonfsti/" target="_blank">LinkedIn</a>
-        </p>
-    </div>
-</footer>
-
+    <!-- Inclusão do script JavaScript -->
     <script src="script.js"></script>
+</body>
 
 </html>

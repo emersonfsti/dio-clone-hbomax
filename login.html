@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - HBO Max</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-login">
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="logo">
+            <img src="img/max-h-w-l.svg" alt="MAX logo">
+        </div>
+        <nav>
+            <ul>
+                <!-- Botão para cadastrar-se -->
+                <li><button onclick="window.location.href='index.html'" class="btn-cadastrar">Cadastrar-se agora</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Login -->
+    <section class="login">
+        <h1>Entrar</h1>
+        <p>Digite o endereço de e-mail e a senha da sua conta Max.</p>
+        <div class="caixa-login">
+            <form>
+                <!-- Campo de e-mail -->
+                <label for="email">Endereço de e-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Campo de senha -->
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <!-- Link para recuperação de senha -->
+                <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
+
+                <!-- Botão de entrar -->
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+        </div>
+        <!-- Link para ajuda ao entrar -->
+        <a href="#" target="_blank" class="ajuda-login">Precisa de ajuda para entrar?</a>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <!-- Texto de direitos autorais -->
+            <p class="direitos-autorais">
+                ©2025 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. Max é usado sob licença.
+            </p>
+
+            <!-- Links para redes sociais -->
+            <div class="redes-sociais">
+                <a href="https://www.facebook.com/HBOMaxLatam" target="_blank">
+                    <img src="img/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/hbomaxlatam/" target="_blank">
+                    <img src="img/instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@hbomaxlatam" target="_blank">
+                    <img src="img/tiktok-icon.png" alt="TikTok">
+                </a>
+                <a href="https://www.youtube.com/c/HBOMaxLatam" target="_blank">
+                    <img src="img/youtube-icon.png" alt="YouTube">
+                </a>
+            </div>
+
+            <!-- Créditos e contatos -->
+            <p class="creditos">
+                Coverpage by Emerson Felix de Souza<br>
+                Contato:
+                <a href="https://github.com/emersonfsti" target="_blank">GitHub</a> -
+                <a href="mailto:emersonfsti@gmail.com">E-mail</a> -
+                <a href="https://www.linkedin.com/in/emersonfsti/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
