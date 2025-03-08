@@ -45,10 +45,11 @@ O projeto está organizado da seguinte forma:
 ---
 ## 🌟 **Imagem das duas paginas criadas**
 
-- **index.html**: 
+**index.html**: 
 <br>
 ![index-html](https://github.com/emersonfsti/dio-clone-hbomax/blob/main/img/index.jpg?raw=true) 
-- **login.html**: 
+
+**login.html**: 
 <br>
 ![login-html](https://github.com/emersonfsti/dio-clone-hbomax/blob/main/img/login.jpg?raw=true) 
 ## 🌟 **Como Executar o Projeto**
